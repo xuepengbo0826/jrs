@@ -10,7 +10,7 @@
         <property name="beginningDelimiter" value="`"/>
         <property name="endingDelimiter" value="`"/>
 
-        <jdbcConnection driverClass="${druid.driver-class-name}" connectionURL="${druid.url}" userId="${druid.username}" password="${druid.password}">
+        <jdbcConnection driverClass="${spring.datasource.driver-class-name}" connectionURL="${spring.datasource.url}" userId="${spring.datasource.username}" password="${spring.datasource.password}">
         </jdbcConnection>
 
         <javaModelGenerator targetPackage="com.jrs.www.po" targetProject="src/main/java"/>
