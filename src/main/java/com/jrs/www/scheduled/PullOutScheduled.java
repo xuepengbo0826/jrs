@@ -16,7 +16,7 @@ public class PullOutScheduled {
     @Autowired
     private LiveGrabService liveGrabService;
 
-    @Scheduled(cron = "0 0/10 * * * ? ")
+    /*@Scheduled(cron = "0 0/10 * * * ? ")
     public void liveGrab(){
         liveGrabService.liveGrab("http://leqiuba.cc/zhibo/");
     }
@@ -29,5 +29,5 @@ public class PullOutScheduled {
     @Scheduled(cron = "0 0/10 * * * ? ")
     public void videotapeGrabFootball(){
         videotapeGrabService.videotapeGrab("http://www.leqiuba.cc/luxiang/zuqiu/", MatchTypeEnums.FOOTBALL.getCode());
-    }
+    }*/
 }

@@ -15,14 +15,14 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "videotape-grab")
-public class VideotapeGrabController {
+public class JrsVideotapeGrabController {
 
     @Autowired
     private VideotapeGrabService videotapeGrabService;
 
-    @RequestMapping(value = "/videotape-grab/#{matchTypeId}", method = RequestMethod.GET)
+    @RequestMapping(value = "/videotape-grab/{matchTypeId}", method = RequestMethod.GET)
     public ResponseBody getVideotapeGrab(@PathVariable("matchTypeId") Integer matchTypeId){
-        List<JrsMatchVideotape> jrsMatchVideotapeList = videotapeGrabService.getVideotapeGrabByMatchTypeId(matchTypeId);
+        List<JrsMatchVideotape> jrsMatchVideotapeList = videotapeGrabService.getVideotapeGrabByMatchTypeId(Integer.valueOf(matchTypeId));
         return ResponseUtil.ResponseUtil(BusnessExcpitonEnums.SUCCESS.getCode(), BusnessExcpitonEnums.SUCCESS.getMessage(), jrsMatchVideotapeList);
     }
 }
