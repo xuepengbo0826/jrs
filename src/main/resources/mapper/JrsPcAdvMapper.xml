@@ -84,4 +84,9 @@
     create_time, modifiy_user_id, modifiy_time
     from jrs_pc_adv
   </select>
+  <select id="selectAllByPositionId" resultMap="BaseResultMap">
+    select id, adv_img, show_start_time, show_end_time, jump_url, delete_status, create_user_id,
+    create_time, modifiy_user_id, modifiy_time
+    from jrs_pc_adv WHERE pc_adv_position_id = #{positionId}
+  </select>
 </mapper>

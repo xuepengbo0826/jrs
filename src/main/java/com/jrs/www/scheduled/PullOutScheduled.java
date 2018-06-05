@@ -1,20 +1,18 @@
 package com.jrs.www.scheduled;
 
-import com.jrs.www.enums.MatchTypeEnums;
-import com.jrs.www.service.LiveGrabService;
-import com.jrs.www.service.VideotapeGrabService;
+import com.jrs.www.service.JrsLiveGrabService;
+import com.jrs.www.service.JrsVideotapeGrabService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 @Component
 public class PullOutScheduled {
 
     @Autowired
-    private VideotapeGrabService videotapeGrabService;
+    private JrsVideotapeGrabService videotapeGrabService;
 
     @Autowired
-    private LiveGrabService liveGrabService;
+    private JrsLiveGrabService liveGrabService;
 
     /*@Scheduled(cron = "0 0/10 * * * ? ")
     public void liveGrab(){

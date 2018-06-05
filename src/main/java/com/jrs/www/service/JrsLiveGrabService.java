@@ -1,6 +1,6 @@
 package com.jrs.www.service;
 
-public interface LiveGrabService {
+public interface JrsLiveGrabService {
 
     void liveGrab(String url);
 }

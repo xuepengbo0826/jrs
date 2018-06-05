@@ -3,7 +3,7 @@ package com.jrs.www.service.impl;
 import com.jrs.www.dao.JrsMatchVideotapeMapper;
 import com.jrs.www.enums.MatchTypeEnums;
 import com.jrs.www.po.JrsMatchVideotape;
-import com.jrs.www.service.VideotapeGrabService;
+import com.jrs.www.service.JrsVideotapeGrabService;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -19,7 +19,7 @@ import java.util.List;
 视频录像
  */
 @Service
-public class VideotapeGrabServiceImpl implements VideotapeGrabService {
+public class JrsVideotapeGrabServiceImpl implements JrsVideotapeGrabService {
 
     @Autowired
     private JrsMatchVideotapeMapper jrsMatchVideotapeMapper;

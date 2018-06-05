@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Component
-public interface VideotapeGrabService {
+public interface JrsVideotapeGrabService {
 
     void videotapeGrab(String url, int typeCode);
 

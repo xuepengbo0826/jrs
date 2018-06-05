@@ -15,8 +15,8 @@ public class JrsPcAdvServiceImpl implements JrsPcAdvService {
     private JrsPcAdvMapper jrsPcAdvMapper;
 
     @Override
-    public List<JrsPcAdv> getJrsPcAdv() {
-        return jrsPcAdvMapper.selectAll();
+    public List<JrsPcAdv> getJrsPcAdv(Integer positionId) {
+        return jrsPcAdvMapper.selectAllByPositionId(positionId);
     }
 
     @Override

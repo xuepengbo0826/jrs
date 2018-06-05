@@ -46,4 +46,6 @@ public interface JrsPcAdvMapper {
      * @mbg.generated Fri Jun 01 16:07:07 GMT+08:00 2018
      */
     int updateByPrimaryKey(JrsPcAdv record);
+
+    List<JrsPcAdv> selectAllByPositionId(Integer positionId);
 }

@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface JrsPcAdvService {
 
-    List<JrsPcAdv> getJrsPcAdv();
+    List<JrsPcAdv> getJrsPcAdv(Integer positionId);
 
     void addJrsPcAdv(JrsPcAdv jrsPcAdv);
 }

@@ -2,7 +2,7 @@ package com.jrs.www.controller;
 
 import com.jrs.www.enums.BusnessExcpitonEnums;
 import com.jrs.www.po.JrsMatchVideotape;
-import com.jrs.www.service.VideotapeGrabService;
+import com.jrs.www.service.JrsVideotapeGrabService;
 import com.jrs.www.util.ResponseUtil;
 import com.jrs.www.vo.ResponseBody;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +18,7 @@ import java.util.List;
 public class JrsVideotapeGrabController {
 
     @Autowired
-    private VideotapeGrabService videotapeGrabService;
+    private JrsVideotapeGrabService videotapeGrabService;
 
     @RequestMapping(value = "/videotape-grab/{matchTypeId}", method = RequestMethod.GET)
     public ResponseBody getVideotapeGrab(@PathVariable("matchTypeId") Integer matchTypeId){

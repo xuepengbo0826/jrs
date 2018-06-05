@@ -1,6 +1,6 @@
 package com.jrs.www.service.impl;
 
-import com.jrs.www.service.LiveGrabService;
+import com.jrs.www.service.JrsLiveGrabService;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 import java.io.IOException;
 
 @Service
-public class LiveGrabServiceImpl implements LiveGrabService {
+public class JrsLiveGrabServiceImpl implements JrsLiveGrabService {
 
     @Override
     public void liveGrab(String url) {
