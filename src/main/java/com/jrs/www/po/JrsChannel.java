@@ -37,7 +37,7 @@ public class JrsChannel {
      *
      * @mbg.generated Mon Jun 04 17:56:27 GMT+08:00 2018
      */
-    private String 视频流类型;
+    private String videoStreamType;
 
     /**
      *
@@ -173,8 +173,8 @@ public class JrsChannel {
      *
      * @mbg.generated Mon Jun 04 17:56:27 GMT+08:00 2018
      */
-    public String get视频流类型() {
-        return 视频流类型;
+    public String getVideoStreamType() {
+        return videoStreamType;
     }
 
     /**
@@ -185,8 +185,8 @@ public class JrsChannel {
      *
      * @mbg.generated Mon Jun 04 17:56:27 GMT+08:00 2018
      */
-    public void set视频流类型(String 视频流类型) {
-        this.视频流类型 = 视频流类型;
+    public void setVideoStreamType(String videoStreamType) {
+        this.videoStreamType = videoStreamType;
     }
 
     /**
